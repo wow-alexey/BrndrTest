@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TestPage</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.9.0/css/bootstrap-slider.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="form-block">
+    <form>
+        <div class="form-group">
+            <label for="weight">Вес изделия</label>
+            <input type="text" name="weight" class="form-control" id="weight" placeholder="Вес изделия" value="15 г">
+        </div>
+        <div class="form-group">
+            <label for="grade">Проба металла</label>
+            <select name="grade" id="grade">
+                <option value="583">583 проба</option>
+                <option value="585" selected>585 проба</option>
+                <option value="750">750 проба</option>
+                <option value="999">999 проба</option>
+            </select>
+        </div>
+        <div class="switch-block">
+            <div class="switch checkedYes">
+                <span class="no">Нет</span>
+                <span class="yes">да</span>
+                <div class="switcher"></div>
+            </div>
+            <span>Камни и вставки</span>
+            <div class="warning">
+                <p>Окончательная оценочная
+                    стоимость залога может
+                    отличаться от указанной в расчете</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="rate">Тарифный план<img src="img/info.png" alt="info" title="Подсказка про виды тарифных планов"></label>
+            <select name="rate" id="rate" class="round">
+                <option value="econom">«Эконом»</option>
+                <option value="simple" selected>«Простой»</option>
+                <option value="premium">«Premium»</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="status">Ваш дисконтный статус</label>
+            <select name="status" id="status" class="round">
+                <option value="empty" selected>Без статуса</option>
+                <option value="silver">Серебряный</option>
+                <option value="gold">Золотой</option>
+            </select>
+        </div>
+        <div class="form-group addMArgin">
+            <label class="term">Срок кредитования до продления</label>
+            <div class="dragIt">
+                <input id="choseBar" type="text" data-slider-min="1" data-slider-max="31" data-slider-step="1"
+                       data-slider-value="15">
+            </div>
+
+        </div>
+        <img class="checkMark" src="img/checkMark.png" alt="checkMark">
+        <input class="submit" type="submit" value="Расчитать кредит">
+    </form>
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.9.0/bootstrap-slider.js"></script>
+<!--all js init-->
+<script src="js/libs.min.js"></script>
+
+</body>
+</html>

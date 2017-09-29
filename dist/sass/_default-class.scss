@@ -1,0 +1,15 @@
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  background: $standartBgColor;
+  height:100vh;
+  color: $labelColor;
+}
+select{
+  background: transparent;
+  border: none;
+  outline: none;
+}
+option{
+  background: transparent;
+}
